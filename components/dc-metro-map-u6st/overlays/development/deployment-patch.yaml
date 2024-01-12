@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-u6st
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/mbasti-test-org/happy-path-wonj-tenant/appstudio/dc-metro-map-u6st@sha256:626b7711693f6e9016346c59e7851b18fa4227cdb9c6664fad67d7bbf52db37b
+        name: my-nodejs
+        resources: {}
+status: {}
